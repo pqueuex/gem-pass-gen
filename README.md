@@ -34,7 +34,7 @@ pip install -e ".[clipboard]"
 pip install -e ".[dev,clipboard]"
 ```
 
-## 🚀 Usage
+## Usage
 
 ### Basic Usage
 
@@ -110,12 +110,12 @@ When using `--symbols-only`:
 - Displays entropy calculation (bits of randomness)
 - Configurable character pool (52 letters + 10 digits + 32 symbols = 94 total)
 - Strength indicators based on entropy:
-  - **Excellent** 🔒🔒🔒: ≥128 bits
-  - **Strong** 🔒🔒: ≥80 bits
-  - **Moderate** 🔒: ≥60 bits
-  - **Weak** ⚠️: <60 bits
+  - **Excellent** : ≥128 bits
+  - **Strong** : ≥80 bits
+  - **Moderate** : ≥60 bits
+  - **Weak** : <60 bits
 
-## 📊 Examples
+## Examples
 
 ### API Keys & Tokens
 ```bash
@@ -203,10 +203,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Joshua - pq@extantra.net
 
-Project Link: [https://github.com/pqueuex/gem-pass-gen](https://github.com/yourusername/gem-pass-gen)
+Project Link: [https://github.com/pqueuex/gem-pass-gen](https://github.com/pqueuex/gem-pass-gen)
 
 ---
-
-**Made with ❤️ for security-conscious developers**
 # gem-pass-gen
 # gem-pass-gen
