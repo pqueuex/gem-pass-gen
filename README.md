@@ -209,3 +209,4 @@ Project Link: [https://github.com/pqueuex/gem-pass-gen](https://github.com/youru
 
 **Made with ❤️ for security-conscious developers**
 # gem-pass-gen
+# gem-pass-gen
