@@ -1,4 +1,4 @@
-# 🔐 Gem Pass Generator
+#  Gem Pass Generator
 
 A secure, beautiful CLI password generator with customizable options for developers and security professionals.
 
@@ -6,17 +6,17 @@ A secure, beautiful CLI password generator with customizable options for develop
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-alpha-yellow.svg)
 
-## ✨ Features
+##  Features
 
-- 🔒 **Cryptographically Secure** - Uses Python's `secrets` module for true randomness
-- 🎨 **Beautiful CLI** - Rich formatting with colors, tables, and panels
-- ⚙️ **Highly Customizable** - Control length, symbols, separators, and more
-- 📊 **Entropy Display** - Shows password strength in bits
-- 📋 **Clipboard Support** - Optional auto-copy to clipboard
-- 🎯 **Multiple Generation** - Generate multiple passwords at once
-- 🚫 **Character Exclusion** - Exclude problematic or ambiguous characters
+- **Cryptographically Secure** - Uses Python's `secrets` module for true randomness
+- **Beautiful CLI** - Rich formatting with colors, tables, and panels
+- **Highly Customizable** - Control length, symbols, separators, and more
+- **Entropy Display** - Shows password strength in bits
+- **Clipboard Support** - Optional auto-copy to clipboard
+- **Multiple Generation** - Generate multiple passwords at once
+- **Character Exclusion** - Exclude problematic or ambiguous characters
 
-## 📦 Installation
+## Installation
 
 ### From Source
 
@@ -43,7 +43,7 @@ pip install -e ".[dev,clipboard]"
 gempass
 
 # Output:
-# 🔐 Gempass Generator
+# Gempass Generator
 #
 # Length:      16 characters
 # Pool size:   94 characters
@@ -52,8 +52,7 @@ gempass
 # ╭─ Generated Password ─╮
 # │ aB3!-xY9@-mN2#-pQ7$  │
 # ╰───────────────────────╯
-#
-# Strength: Strong 🔒🔒
+
 ```
 
 ### Advanced Options
@@ -84,21 +83,20 @@ gempass --copy
 gempass -l 24 --hash --exclude-ambiguous --copy
 ```
 
-## 📋 Command Options
+## Command Options
 
-| Option | Short | Description | Default |
-|--------|-------|-------------|---------|
-| `--length` | `-l` | Password length | `16` |
-| `--hash` | | Generate single hash (no chunks) | `False` |
-| `--separator` | `-s` | Chunk separator | `"-"` |
-| `--exclude` | `-x` | Characters to exclude | `""` |
-| `--exclude-ambiguous` | | Exclude 0/O, 1/l/I, etc. | `False` |
-| `--symbols-only` | | Symbol level: basic/moderate/all | `None` |
-| `--count` | `-n` | Number of passwords | `1` |
-| `--copy` | | Copy to clipboard | `False` |
-| `--help` | | Show help message | |
 
-## 🎯 Symbol Levels
+| `--length` | `-l` | Password length | `16` 
+| `--hash` | | Generate single hash (no chunks) | `False` 
+| `--separator` | `-s` | Chunk separator | `"-"` 
+| `--exclude` | `-x` | Characters to exclude | `""` 
+| `--exclude-ambiguous` | | Exclude 0/O, 1/l/I, etc. | `False` 
+| `--symbols-only` | | Symbol level: basic/moderate/all | `None` 
+| `--count` | `-n` | Number of passwords | `1` 
+| `--copy` | | Copy to clipboard | `False` 
+| `--help` | | Show help message | 
+
+##  Symbol Levels
 
 When using `--symbols-only`:
 
@@ -106,7 +104,7 @@ When using `--symbols-only`:
 - **moderate**: `!@#$%^&*()[]{}+-_=` (16 symbols)
 - **all**: All punctuation characters (32 symbols)
 
-## 🔐 Security Features
+## Security Features
 
 - Uses `secrets` module for cryptographically secure random generation
 - Displays entropy calculation (bits of randomness)
@@ -142,7 +140,7 @@ gempass -l 24 --exclude "'\"\`"
 gempass -n 5 -l 12
 ```
 
-## 🛠️ Development
+## Development
 
 ### Setup Development Environment
 
@@ -174,14 +172,14 @@ ruff check gempass_generator.py
 mypy gempass_generator.py
 ```
 
-## 📝 Requirements
+## Requirements
 
 - Python 3.8+
 - click >= 8.0.0
 - rich >= 13.0.0
 - pyperclip >= 1.8.0 (optional, for clipboard support)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -191,24 +189,23 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [Click](https://click.palletsprojects.com/) for CLI framework
 - Styled with [Rich](https://rich.readthedocs.io/) for beautiful terminal output
 - Inspired by the need for secure, customizable password generation
 
-## 📧 Contact
+## Contact
 
 Joshua - pq@extantra.net
 
-Project Link: [https://github.com/yourusername/gem-pass-gen](https://github.com/yourusername/gem-pass-gen)
+Project Link: [https://github.com/pqueuex/gem-pass-gen](https://github.com/yourusername/gem-pass-gen)
 
 ---
 
 **Made with ❤️ for security-conscious developers**
-# gem-pass-gen
 # gem-pass-gen

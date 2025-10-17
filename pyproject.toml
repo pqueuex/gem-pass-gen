@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_backend"
+
+[project]
+name = "gem-pass-gen"
+version = "0.1.0"
+description = "A secure, beautiful CLI password generator with customizable options"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Joshua", email = "pq@extantra.net"}
+]
+keywords = ["password", "generator", "security", "cli", "cryptography"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "rich>=13.0.0",
+    "click>=8.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+clipboard = [
+    "pyperclip>=1.8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/gem-pass-gen"
+Repository = "https://github.com/yourusername/gem-pass-gen"
+Issues = "https://github.com/yourusername/gem-pass-gen/issues"
+Documentation = "https://github.com/yourusername/gem-pass-gen#readme"
+
+[project.scripts]
+gempass = "gem_pass_gen.__main__:main"
+gem-pass = "gem_pass_gen.__main__:main"
+
+[tool.setuptools]
+packages = ["gem_pass_gen"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
