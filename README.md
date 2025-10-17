@@ -204,7 +204,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Joshua - pq@extantra.net
 
 Project Link: [https://github.com/pqueuex/gem-pass-gen](https://github.com/pqueuex/gem-pass-gen)
-
----
-# gem-pass-gen
-# gem-pass-gen
